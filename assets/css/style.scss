@@ -1,0 +1,59 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.site-logo {
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.site-logo img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.site-nav li {
+  margin: 0.35rem 0;
+}
+
+.site-nav li ul {
+  margin: 0.25rem 0 0.75rem 1rem;
+}
+
+.site-nav li ul li {
+  font-size: 0.9rem;
+}
+
+.site-nav a {
+  color: #2879d0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  text-decoration: underline;
+}
+
+#main-content img {
+  height: auto;
+  max-width: 100%;
+}
+
+#main-content .product-image {
+  margin: 1rem 0;
+}
+
+@media print {
+  .site-nav {
+    display: none;
+  }
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a class="site-logo" href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/images/header.png' | relative_url }}" alt="Autotechnik Troger">
+        </a>
+        <p>{{ site.description }}</p>
+
+        <nav class="site-nav" aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="{{ '/uber-uns/' | relative_url }}">Über uns</a></li>
+            <li>
+              <a href="{{ '/ersatzteile/' | relative_url }}">Ersatzteile</a>
+              <ul>
+                <li><a href="{{ '/reifen-felgen/' | relative_url }}">Reifen &amp; Felgen</a></li>
+                <li><a href="{{ '/batterien/' | relative_url }}">Batterien</a></li>
+                <li><a href="{{ '/dampfung/' | relative_url }}">Dämpfung</a></li>
+                <li><a href="{{ '/auspuffanlagen/' | relative_url }}">Auspuffanlagen</a></li>
+                <li><a href="{{ '/bremsen/' | relative_url }}">Bremsen</a></li>
+                <li><a href="{{ '/serviceteile/' | relative_url }}">Serviceteile</a></li>
+                <li><a href="{{ '/zubehor/' | relative_url }}">Zubehör</a></li>
+              </ul>
+            </li>
+            <li><a href="{{ '/anfahrt/' | relative_url }}">Anfahrt</a></li>
+            <li><a href="{{ '/kontakt/' | relative_url }}">Kontakt / Anfrage</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section>
+        <div id="title">
+          <h1>{{ page.title | default: site.title }}</h1>
+        </div>
+        <div id="main-content">
+          {{ content }}
+        </div>
+        <footer>
+          <p><a href="{{ '/impressum/' | relative_url }}">Impressum</a></p>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>

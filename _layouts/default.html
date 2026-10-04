@@ -81,6 +81,74 @@
           }
         }
       });
+
+      const imageLightbox = document.createElement('div');
+      imageLightbox.className = 'image-lightbox';
+      imageLightbox.setAttribute('role', 'dialog');
+      imageLightbox.setAttribute('aria-modal', 'true');
+      imageLightbox.setAttribute('aria-label', 'Anzeige vergrößert');
+      imageLightbox.setAttribute('aria-hidden', 'true');
+      imageLightbox.setAttribute('tabindex', '-1');
+
+      const lightboxImage = document.createElement('img');
+      lightboxImage.className = 'image-lightbox__image';
+      imageLightbox.appendChild(lightboxImage);
+      document.body.appendChild(imageLightbox);
+
+      let activeImageButton = null;
+
+      const closeImageLightbox = () => {
+        if (!activeImageButton) {
+          return;
+        }
+
+        imageLightbox.classList.remove('is-open');
+        imageLightbox.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('image-lightbox-open');
+        activeImageButton.setAttribute('aria-expanded', 'false');
+        activeImageButton.setAttribute('aria-label', 'Anzeige vergrößern');
+        activeImageButton.focus();
+        activeImageButton = null;
+      };
+
+      document.querySelectorAll('.click-to-enlarge').forEach((imageButton) => {
+        imageButton.setAttribute('aria-expanded', 'false');
+        imageButton.addEventListener('click', () => {
+          if (activeImageButton) {
+            closeImageLightbox();
+            return;
+          }
+
+          activeImageButton = imageButton;
+          lightboxImage.src = imageButton.querySelector('img').src;
+          lightboxImage.alt = imageButton.querySelector('img').alt;
+          imageLightbox.setAttribute('aria-hidden', 'false');
+          imageLightbox.classList.add('is-open');
+          document.body.classList.add('image-lightbox-open');
+          imageButton.setAttribute('aria-expanded', 'true');
+          imageButton.setAttribute('aria-label', 'Anzeige verkleinern');
+          imageLightbox.focus();
+        });
+      });
+
+      imageLightbox.addEventListener('click', (event) => {
+        if (event.target === imageLightbox || event.target === lightboxImage) {
+          closeImageLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (!activeImageButton) {
+          return;
+        }
+
+        if (event.key === 'Escape') {
+          closeImageLightbox();
+        } else if (event.key === 'Tab') {
+          event.preventDefault();
+          imageLightbox.focus();
+        }
+      });
     </script>
   </body>
 </html>

@@ -48,6 +48,52 @@ header p {
   max-width: 100%;
 }
 
+.click-to-enlarge {
+  background: none;
+  border: 0;
+  cursor: zoom-in;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.click-to-enlarge img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 180px;
+}
+
+.image-lightbox {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(0.4rem);
+  display: none;
+  inset: 0;
+  justify-content: center;
+  padding: 1rem;
+  position: fixed;
+  z-index: 1000;
+}
+
+.image-lightbox.is-open {
+  display: flex;
+}
+
+.image-lightbox__image {
+  cursor: zoom-out;
+  height: auto;
+  max-height: calc(100vh - 2rem);
+  max-width: calc(100vw - 2rem);
+  object-fit: contain;
+  width: auto;
+}
+
+body.image-lightbox-open {
+  overflow: hidden;
+}
+
 .site-nav > ul,
 .site-nav__submenu {
   list-style: none;

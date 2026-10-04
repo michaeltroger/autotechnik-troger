@@ -18,9 +18,12 @@
         <nav class="site-nav" aria-label="Hauptnavigation">
           <ul>
             <li><a href="{{ '/uber-uns/' | relative_url }}">Über uns</a></li>
-            <li>
+            <li class="site-nav__dropdown">
               <a href="{{ '/ersatzteile/' | relative_url }}">Ersatzteile</a>
-              <ul>
+              <button class="site-nav__toggle" type="button" aria-label="Ersatzteile-Untermenü" aria-expanded="false" aria-controls="ersatzteile-submenu">
+                <span aria-hidden="true"></span>
+              </button>
+              <ul class="site-nav__submenu" id="ersatzteile-submenu">
                 <li><a href="{{ '/reifen-felgen/' | relative_url }}">Reifen &amp; Felgen</a></li>
                 <li><a href="{{ '/batterien/' | relative_url }}">Batterien</a></li>
                 <li><a href="{{ '/dampfung/' | relative_url }}">Dämpfung</a></li>
@@ -48,5 +51,34 @@
         </footer>
       </section>
     </div>
+    <script>
+      const ersatzteileDropdown = document.querySelector('.site-nav__dropdown');
+      const ersatzteileToggle = document.querySelector('.site-nav__toggle');
+
+      ersatzteileToggle.addEventListener('click', () => {
+        const isOpen = ersatzteileDropdown.classList.toggle('is-open');
+        ersatzteileToggle.setAttribute('aria-expanded', isOpen);
+      });
+
+      document.addEventListener('click', (event) => {
+        if (!ersatzteileDropdown.contains(event.target)) {
+          ersatzteileDropdown.classList.remove('is-open');
+          ersatzteileToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        const focusIsInDropdown = ersatzteileDropdown.contains(document.activeElement);
+
+        if (event.key === 'Escape' && (ersatzteileDropdown.classList.contains('is-open') || focusIsInDropdown)) {
+          ersatzteileDropdown.classList.remove('is-open');
+          ersatzteileToggle.setAttribute('aria-expanded', 'false');
+
+          if (focusIsInDropdown) {
+            ersatzteileDropdown.nextElementSibling.querySelector('a').focus();
+          }
+        }
+      });
+    </script>
   </body>
 </html>

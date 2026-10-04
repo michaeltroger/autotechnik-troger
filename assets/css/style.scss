@@ -3,14 +3,14 @@
 
 @import "{{ site.theme }}";
 
-// header {
-//   background: #2e7bcf;
-// }
+header {
+  background: #2e7bcf;
+  background-image: none;
+}
 
-// .site-logo {
-//   display: block;
-//   margin-bottom: 1.25rem;
-// }
+header p {
+  color: #000;
+}
 
 .site-logo img {
   display: block;
@@ -108,15 +108,6 @@
 .site-nav a:focus {
   text-decoration: underline;
 }
-
-// #main-content img {
-//   height: auto;
-//   max-width: 100%;
-// }
-
-// #main-content .product-image {
-//   margin: 1rem 0;
-// }
 
 @media print {
   .site-nav {

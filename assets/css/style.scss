@@ -32,10 +32,14 @@ footer {
 header {
   background: #2e7bcf;
   background-image: none;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
 header p {
   color: #000;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .site-logo img {

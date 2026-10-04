@@ -3,15 +3,11 @@ title: Willkommen
 permalink: /
 ---
 
-## Herzlich Willkommen
-
 auf der Internetpräsenz der **Fa. Autotechnik Ing. Paul Troger, Unterlamm-Bad Loipersdorf!**
 
-33 Jahre lang waren wir bekannt im Tiroler Unterland für Kompetenz, Verlässlichkeit und günstige Preise rund um Ihr Auto. Am 1.10.2020 übergab ich meinen Betrieb an Markus Mühlböck, der meine Kunden weiterhin gut vertreten wird.
+Ursprünglich in Tirol gegründet, verkaufen wir auf Anfrage nach wie vor praktisch alle Auto-Ersatzteile von A–Z aus unserem neuen Büro in der Steiermark.
 
-Ich kann auf Anfrage aber nach wie vor den Verkauf praktisch aller Auto-Ersatzteile von A–Z aus meinem neuen Büro in der Steiermark übernehmen.
-
-### Ab sofort wieder Winterreifen-Aktion!
+33 Jahre lang waren wir bekannt im Tiroler Unterland für Kompetenz, Verlässlichkeit und günstige Preise rund um Ihr Auto. 
 
 Zeitungsbeilage aus den Bezirksblättern:
 

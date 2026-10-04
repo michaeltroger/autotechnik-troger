@@ -3,4 +3,4 @@ title: Batterien
 permalink: /batterien/
 ---
 
-Wir verkaufen gute und günstige Batterien der Firma Global.
+Wir verkaufen Starterbatterien, EFB (Enhanced Flooded Battery) und AGM (Absorbent Glass Mat) in Erstausrüsterqualität. Unter anderem von der Firma Global.

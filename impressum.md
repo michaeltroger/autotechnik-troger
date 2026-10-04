@@ -9,6 +9,6 @@ permalink: /impressum/
 **E-Mail:** [info@autotechnik-troger.at](mailto:info@autotechnik-troger.at)  
 **Umsatzsteuer-Identifikationsnummer:** ATU33176407
 
-Sie finden mich auch im [Firmenverzeichnis der Wirtschaftskammer](https://firmen.wko.at/ing-paul-troger/steiermark/?firmaid=529f0ea5-d0fc-4f94-85a6-ad45efc423c2).
+Sie finden mich auch im [Firmenverzeichnis der Wirtschaftskammer](https://firmen.wko.at/ing-paul-troger-autotechnik-ing-paul-troger/steiermark/?firmaid=4258cbdc-8a42-414f-bec4-c0c849554f7a).
 
 **Design & technische Umsetzung:** [Michael Troger](https://michaeltroger.com)

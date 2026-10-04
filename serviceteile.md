@@ -3,7 +3,7 @@ title: Serviceteile
 permalink: /serviceteile/
 ---
 
-Wir führen die führenden Filterhersteller Mann und Mahle. Egal ob Luft-, Öl-, Innenraum- oder Kraftstofffilter – bei uns werden Sie fündig.
+Wir führen die führenden Filterhersteller Mann und Mahle sowie Filtron. Egal ob Luft-, Öl-, Innenraum- oder Kraftstofffilter – bei uns werden Sie fündig.
 
 ![Filter]({{ '/assets/images/filter.jpg' | relative_url }}){: .product-image}
 

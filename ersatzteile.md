@@ -19,5 +19,4 @@ Und das in Erstausrüsterqualität!
 - Motorteile (Ventildeckeldichtungen, Zylinderkopfdichtungen, …)
 - Karosserie (Scheinwerfer, Stoßstangen, Windschutzscheiben, …)
 - Pflege & Öle
-- Lacke
 - Zubehör (Anhängevorrichtungen, Dachträger, …)

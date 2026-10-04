@@ -3,6 +3,21 @@
 
 @import "{{ site.theme }}";
 
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+header,
+#title,
+#main-content {
+  text-align: left;
+}
+
 #main-content {
   float: none;
   max-width: 100%;
@@ -11,6 +26,7 @@
 
 footer {
   clear: both;
+  text-align: left;
 }
 
 header {

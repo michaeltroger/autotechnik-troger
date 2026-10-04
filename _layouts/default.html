@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
+    <header>
+      <div class="wrapper">
         <a class="site-logo" href="{{ '/' | relative_url }}">
           <img src="{{ '/assets/images/header.png' | relative_url }}" alt="Autotechnik Troger">
         </a>
@@ -37,8 +37,10 @@
             <li><a href="{{ '/kontakt/' | relative_url }}">Kontakt / Anfrage</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
 
+    <div class="wrapper">
       <section>
         <div id="title">
           <h1>{{ page.title | default: site.title }}</h1>

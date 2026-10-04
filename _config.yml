@@ -3,11 +3,10 @@ description: Auto-Ersatzteile in Unterlamm-Bad Loipersdorf
 lang: de-AT
 url: https://www.autotechnik-troger.at
 baseurl: ""
-remote_theme: pages-themes/architect@v0.2.0
+theme: jekyll-theme-architect
 show_downloads: false
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-seo-tag
 
 exclude:

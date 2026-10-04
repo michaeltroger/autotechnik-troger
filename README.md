@@ -13,4 +13,4 @@ bundle exec jekyll serve
 
 The site will be available at `http://localhost:4000`.
 
-GitHub Pages can build this repository directly because the theme is configured through `remote_theme`.
+GitHub Pages can build this repository directly because it uses the built-in `jekyll-theme-architect` theme.

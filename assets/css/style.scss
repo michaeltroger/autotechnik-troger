@@ -3,6 +3,16 @@
 
 @import "{{ site.theme }}";
 
+#main-content {
+  float: none;
+  max-width: 100%;
+  width: auto;
+}
+
+footer {
+  clear: both;
+}
+
 header {
   background: #2e7bcf;
   background-image: none;

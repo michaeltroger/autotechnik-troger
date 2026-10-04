@@ -10,6 +10,6 @@ Geschäftsinhaber Ing. Paul Troger: „Ich bin vor allem bemüht, mit meinem tec
 
 Am 1.10.2020 trennten wir uns von unserer jahrzehntelangen Betriebsstätte in Tirol. Wir übernehmen seither aber auf Anfrage nach wie vor den Verkauf praktisch aller Auto-Ersatzteile von A–Z aus unserem neuen Büro in der Steiermark.
 
-![Ing. Paul Troger]({{ '/assets/images/paul.jpg' | relative_url }})
+![Ing. Paul Troger]({{ '/assets/images/paul.jpg' | relative_url }} "Ing. Paul Troger")
 
 Ing. Paul Troger

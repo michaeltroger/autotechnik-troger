@@ -14,5 +14,3 @@ Zeitungsbeilage aus den Bezirksblättern:
 <button class="click-to-enlarge" type="button" aria-label="Anzeige vergrößern" aria-expanded="false">
   <img src="{{ '/assets/images/anzeige.jpg' | relative_url }}" alt="Anzeige aus den Bezirksblättern">
 </button>
-
-[Besuche uns auch auf unserer Facebook-Seite!](https://www.facebook.com/pages/Autotechnik-Troger-Wiesing-Tirol/171878082859373)

@@ -7,7 +7,7 @@ auf der Internetpräsenz der **Fa. Autotechnik Ing. Paul Troger, Unterlamm-Bad L
 
 Ursprünglich in Tirol gegründet, verkaufen wir auf Anfrage nach wie vor praktisch **alle Auto-Ersatzteile von A–Z** aus unserem neuen Büro in der Steiermark.
 
-33 Jahre lang waren wir bekannt im Tiroler Unterland für Kompetenz, Verlässlichkeit und günstige Preise rund um Ihr Auto. Am 1.12.2026 beginnt schließlich das **40. Unternehmensjahr**.
+33 Jahre lang waren wir im Tiroler Unterland für **Kompetenz, Verlässlichkeit und günstige Preise rund um Ihr Auto** bekannt. Am 1.12.2026 beginnt nun **unser 40. Unternehmensjahr**. Wir danken für euer Vertrauen!
 
 Zeitungsbeilage aus den Bezirksblättern:
 

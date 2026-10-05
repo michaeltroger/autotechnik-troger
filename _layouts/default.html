@@ -20,11 +20,12 @@
           <ul>
             <li><a href="{{ '/uber-uns/' | relative_url }}">Über uns</a></li>
             <li class="site-nav__dropdown">
-              <a href="{{ '/ersatzteile/' | relative_url }}">Ersatzteile</a>
-              <button class="site-nav__toggle" type="button" aria-label="Ersatzteile-Untermenü" aria-expanded="false" aria-controls="ersatzteile-submenu">
-                <span aria-hidden="true"></span>
+              <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="ersatzteile-submenu">
+                Ersatzteile
+                <span class="site-nav__toggle-chevron" aria-hidden="true"></span>
               </button>
               <ul class="site-nav__submenu" id="ersatzteile-submenu">
+                <li><a href="{{ '/ersatzteile/' | relative_url }}">Alle Ersatzteile</a></li>
                 <li><a href="{{ '/reifen-felgen/' | relative_url }}">Reifen &amp; Felgen</a></li>
                 <li><a href="{{ '/batterien/' | relative_url }}">Batterien</a></li>
                 <li><a href="{{ '/dampfung/' | relative_url }}">Dämpfung</a></li>
@@ -61,6 +62,10 @@
     <script>
       const ersatzteileDropdown = document.querySelector('.site-nav__dropdown');
       const ersatzteileToggle = document.querySelector('.site-nav__toggle');
+      const closeErsatzteileDropdown = () => {
+        ersatzteileDropdown.classList.remove('is-open');
+        ersatzteileToggle.setAttribute('aria-expanded', 'false');
+      };
 
       ersatzteileToggle.addEventListener('click', () => {
         const isOpen = ersatzteileDropdown.classList.toggle('is-open');
@@ -69,8 +74,13 @@
 
       document.addEventListener('click', (event) => {
         if (!ersatzteileDropdown.contains(event.target)) {
-          ersatzteileDropdown.classList.remove('is-open');
-          ersatzteileToggle.setAttribute('aria-expanded', 'false');
+          closeErsatzteileDropdown();
+        }
+      });
+
+      ersatzteileDropdown.addEventListener('focusout', (event) => {
+        if (!ersatzteileDropdown.contains(event.relatedTarget)) {
+          closeErsatzteileDropdown();
         }
       });
 
@@ -78,11 +88,10 @@
         const focusIsInDropdown = ersatzteileDropdown.contains(document.activeElement);
 
         if (event.key === 'Escape' && (ersatzteileDropdown.classList.contains('is-open') || focusIsInDropdown)) {
-          ersatzteileDropdown.classList.remove('is-open');
-          ersatzteileToggle.setAttribute('aria-expanded', 'false');
+          closeErsatzteileDropdown();
 
           if (focusIsInDropdown) {
-            ersatzteileDropdown.nextElementSibling.querySelector('a').focus();
+            ersatzteileToggle.focus();
           }
         }
       });

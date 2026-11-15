@@ -15,6 +15,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - README.md
+  - AGENTS.md
 
 defaults:
   - scope:

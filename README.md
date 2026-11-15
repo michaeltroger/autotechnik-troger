@@ -1,16 +1,10 @@
-# Autotechnik Troger
+## License
 
-This repository contains the German-language Jekyll recreation of [Autotechnik Troger](https://www.autotechnik-troger.at/), using the [Architect theme](https://github.com/pages-themes/architect) for the base presentation.
+No license is granted for this project.
 
-## Local development
+All source code in this repository is the exclusive copyright of
+Michael Troger. You may view the code on GitHub, but you may not use,
+modify, distribute, or reproduce it without explicit written permission.
 
-Install Ruby and Bundler, then run:
+© 2026 Michael Troger
 
-```sh
-bundle install
-bundle exec jekyll serve
-```
-
-The site will be available at `http://localhost:4000`.
-
-GitHub Pages can build this repository directly because it uses the built-in `jekyll-theme-architect` theme.
